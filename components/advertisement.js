@@ -27,12 +27,12 @@ export default function Advertisement () {
         console.log(mediaPreview);
     }
 
-    useEffect(() => {
-        document.body.style.overflow = "hidden";
-    return () => {
-        document.body.style.overflow = "visible";
-        }
-    }, []);
+    // useEffect(() => {
+    //     document.body.style.overflow = "hidden";
+    // return () => {
+    //     document.body.style.overflow = "visible";
+    //     }
+    // }, []);
 
     // const handleInput = () => {
     //     console.log("advertisement", { company, header, description });
@@ -47,7 +47,7 @@ export default function Advertisement () {
                 <meta name="description" content="earnandtrade, advertisement" />
             </Head>
             <FocusLock>
-                <Container as="h1" size="massive" style={{ margin: '3em', boxShadow: '2px 2px 10px black' }}>
+                <Container as="h1" size="massive" style={{ margin: '2em', boxShadow: '2px 2px 10px black' }}>
                     <Segment attached textAlign="center">
                         <div style={{ color: '#125CA1', fontSize: '52px', fontWeight: '700', padding: '1em 0em .5em 0em' }}>
                             Advertisement Generator
