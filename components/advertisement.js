@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import { Container, Segment, Button, Form, Icon, Grid, Item, Card } from 'semantic-ui-react';
 import FocusLock from 'react-focus-lock';
 import styles from '../styles/advertisement.module.css';
 
-const advertisement = () => {
+export default function Advertisement () {
     const [company, setCompany] = useState('');
     // const [header, setHeader] = useState('');
     const [description, setDescription] = useState('');
@@ -26,6 +26,13 @@ const advertisement = () => {
         console.log(files[0].name);
         console.log(mediaPreview);
     }
+
+    useEffect(() => {
+        document.body.style.overflow = "hidden";
+    return () => {
+        document.body.style.overflow = "visible";
+        }
+    }, []);
 
     // const handleInput = () => {
     //     console.log("advertisement", { company, header, description });
@@ -208,7 +215,7 @@ const advertisement = () => {
                                                 <Icon
                                                     name="calendar"
                                                 />
-                                                Your account needs to settle, which can take more than 30 days (due to possible returns). In this time, Earn and Trade users are credited with "Pending Points".
+                                                {`Your account needs to settle, which can take more than 30 days (due to possible returns). In this time, Earn and Trade users are credited with "Pending Points".`}
                                             </div>
                                         </div>
                                         <Button
@@ -231,5 +238,3 @@ const advertisement = () => {
         </>
     );
 }
-
-export default advertisement;
