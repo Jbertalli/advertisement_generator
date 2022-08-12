@@ -126,7 +126,7 @@ export default function Advertisement () {
                                                         textAlign: 'center', 
                                                         fontSize: '1.5em', 
                                                         fontWeight: '50', 
-                                                        margin: '0em em 0em 0em', 
+                                                        margin: '0em 0em 0em 0em', 
                                                         color: 'gray', 
                                                         padding: '4.5em 0em 4.5em 0em', 
                                                         boxShadow: '2px 2px 10px black' 
