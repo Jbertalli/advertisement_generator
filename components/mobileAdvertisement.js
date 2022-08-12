@@ -135,7 +135,6 @@ export default function Advertisement () {
                                 label="Logo Height"
                                 placeholder="height (pixels)"
                                 type="number"
-                                style={{ width: '200px' }}
                                 // value={height}
                                 style={{ width: '96vw', marginLeft: '.2em' }}
                                 onChange = {e => setHeight(e.target.value)}
@@ -144,7 +143,6 @@ export default function Advertisement () {
                                 label="Left Margin"
                                 placeholder="left (pixels)"
                                 type="number"
-                                style={{ width: '200px' }}
                                 // value={left}
                                 style={{ width: '96vw', marginLeft: '.2em' }}
                                 onChange = {e => setLeft(e.target.value)}
@@ -153,7 +151,6 @@ export default function Advertisement () {
                                 label="Top Margin"
                                 placeholder="top (pixels)"
                                 type="number"
-                                style={{ width: '200px' }}
                                 // value={top}
                                 style={{ width: '96vw', marginLeft: '.2em' }}
                                 onChange = {e => setTop(e.target.value)}
