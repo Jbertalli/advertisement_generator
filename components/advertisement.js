@@ -6,7 +6,6 @@ import styles from '../styles/advertisement.module.css';
 
 export default function Advertisement () {
     const [company, setCompany] = useState('');
-    // const [header, setHeader] = useState('');
     const [description, setDescription] = useState('');
     const [mediaPreview, setMediaPreview] = useState('');
     const [image, setImage] = useState({name: '', media: ''});
