@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
-import { Container, Segment, Button, Form, Icon, Grid, Item, Card } from 'semantic-ui-react';
+import { Button, Form, Icon, Item, Card } from 'semantic-ui-react';
 import FocusLock from 'react-focus-lock';
 import styles from '../styles/advertisement.module.css';
 
-export default function Advertisement () {
+export default function MobileAdvertisement () {
     const [company, setCompany] = useState('');
     // const [header, setHeader] = useState('');
     const [description, setDescription] = useState('');
