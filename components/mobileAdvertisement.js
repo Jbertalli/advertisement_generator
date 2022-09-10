@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { Button, Form, Icon, Item, Card } from 'semantic-ui-react';
 import FocusLock from 'react-focus-lock';
 import styles from '../styles/advertisement.module.css';
+import Local from '../components/localStorage';
 
 export default function MobileAdvertisement () {
     const [company, setCompany] = useState('');
@@ -33,6 +34,7 @@ export default function MobileAdvertisement () {
                 <title>Earn and Trade Advertisement Generator</title>
                 <meta name="description" content="earnandtrade, advertisement" />
             </Head>
+            <Local company={company} setCompany={setCompany} description={description} setDescription={setDescription} width={width} setWidth={setWidth} height={height} setHeight={setHeight} left={left} setLeft={setLeft} top={top} setTop={setTop} />
             <FocusLock>
                 <div>
                     <center style={{ color: '#125CA1', fontSize: '52px', fontWeight: '700', padding: '.5em 0em 0em 0em', lineHeight: '50px' }}>

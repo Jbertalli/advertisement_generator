@@ -27,7 +27,9 @@ export default function Home() {
     <>
       {isDesktop ? (
       <>
-        <Advertisement />
+        <div style={{ marginTop: '20px', paddingBottom: '30px' }}>
+          <Advertisement />
+        </div>
       </>
       ):(
       <>
